@@ -1,0 +1,64 @@
+@use "assets/reset";
+@use "assets/variables" as *;
+@use "assets/mixins" as *;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-color: $color-navy-950;
+    padding: $spacing-300;
+}
+
+.card{
+    inline-size: 100%;
+    background-color: $color-blue-950;
+    color: $color-white;
+
+    &__image {
+        inline-size: 100%;
+        block-size: auto;
+    }
+
+    &__content {
+        @include flex-col($spacing-500);
+        padding: $spacing-300 $spacing-400;
+        text-align: center;
+    }
+
+    &__header {
+        @include flex-col($spacing-100);
+    }
+
+    &__title {
+        @include text-preset(2);
+    }
+
+    &__spec {
+        color: $color-purple-500;
+    }
+
+    &__desc {
+        @include text-preset(4);
+        opacity: .75;
+    }
+
+    &__stats {
+        @include flex-col($spacing-400);
+    }
+
+    &__number {
+        @include text-preset(3);
+    }
+
+    &__name {
+        @include text-preset(5);
+        opacity: .6;
+        text-transform: uppercase;
+    }
+
+}
+
+

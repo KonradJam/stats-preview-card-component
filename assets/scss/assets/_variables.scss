@@ -1,0 +1,26 @@
+//Colors
+$color-white: rgb(255,255,255);
+$color-navy-950: rgb(10,12,28);
+$color-blue-950: rgb(27,25,55);
+$color-purple-500: rgb(171,92,219);
+
+//Spacing
+$spacing-0: 0;
+$spacing-100: .5rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-800: 4rem;
+$spacing-900: 4.5rem;
+$spacing-1000: 5rem;
+
+//Typography
+$text-preset: (
+    1: (ff: "Inter", fs: 2.25rem, lh: 1.25, fw: 700, ls: 0),
+    2: (ff: "Inter", fs: 1.75rem, lh: 1.25, fw: 700, ls: 0),
+    3: (ff: "Inter", fs: 1.5rem, lh: 1.20, fw: 700, ls: 0),
+    4: (ff: "Inter", fs: .9375rem, lh: 1.65, fw: 400, ls: 0),
+    5: (ff: "Lexend Deca", fs: .75rem, lh: 2, fw: 400, ls: .0625rem)
+);
+
+

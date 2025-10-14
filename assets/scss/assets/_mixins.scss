@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin text-preset($num) {
+    $preset: map-get($text-preset, $num);
+    font-family: map-get($preset, ff), sans-serif;
+    font-size: map-get($preset, fs);
+    line-height: map-get($preset, lh);
+    font-weight: map-get($preset, fw);
+    letter-spacing: map-get($preset, ls);
+}
+
+@mixin flex-col($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
