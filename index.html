@@ -14,11 +14,13 @@
 </head>
 <body>
   <main class="card">
-    <img class="card__image"
-      srcset="assets/images/image-header-mobile.jpg 654w,
-        assets/images/image-header-desktop.jpg 540w,"
-      size="(width <= 768px) 654w" 
-      src="assets/images/image-header-mobile.jpg" alt="">
+    <div class="card__hero">
+      <img class="card__image"
+        srcset="assets/images/image-header-mobile.jpg 600w,
+        assets/images/image-header-desktop.jpg 800w"
+        size="(max-width: 1023px) 600px, (min-width: 1024px) 800px"
+        src="assets/images/image-header-mobile.jpg" alt="">
+    </div>
     <section class="card__content">
       <header class="card__header">
         <h1 class="card__title">Get <span class="card__spec">insights</span> that help your business grow.</h1>
