@@ -14,22 +14,22 @@
 </head>
 <body>
   <main class="card">
-    <div class="card__hero">
+    <div class="card__hero" role="presentation">
       <img class="card__image"
         srcset="assets/images/image-header-mobile.jpg 600w,
         assets/images/image-header-desktop.jpg 800w"
-        size="(max-width: 1023px) 600px, (min-width: 1024px) 800px"
+        sizes="(max-width: 1023px) 600px, (min-width: 1024px) 800px"
         src="assets/images/image-header-mobile.jpg" alt="">
     </div>
-    <section class="card__content">
+    <section class="card__content" aria-labelledby="card__title">
       <header class="card__header">
-        <h1 class="card__title">Get <span class="card__spec">insights</span> that help your business grow.</h1>
+        <h1 id="card__title" class="card__title">Get <span class="card__spec">insights</span> that help your business grow.</h1>
         <p class="card__desc">
           Discover the benefits of data analytics and make better decisions regarding revenue, customer
           experience, and overall efficiency.
         </p>
       </header>
-      <section class="card__stats">
+      <section class="card__stats" aria-label="Buisness statistics">
         <div class="card__group">
           <p class="card__number">10k+</p>
           <p class="card__name">companies</p>
