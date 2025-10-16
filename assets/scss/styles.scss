@@ -6,8 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    inline-size: 100vw;
-    block-size: 100vh;
+    max-inline-size: 100%;
+    max-block-size: 100%;
     background-color: $color-navy-950;
     padding: 0 clamp(1.5rem, calc(-3.152rem + 19.847vw), 6.375rem); /* min: 24px, max: 102px */;
 }

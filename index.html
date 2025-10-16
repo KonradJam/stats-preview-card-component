@@ -19,7 +19,7 @@
         srcset="assets/images/image-header-mobile.jpg 600w,
         assets/images/image-header-desktop.jpg 800w"
         sizes="(max-width: 1023px) 600px, (min-width: 1024px) 800px"
-        src="assets/images/image-header-mobile.jpg" alt="">
+        src="assets/images/image-header-mobile.jpg" alt="" aria-hidden="true">
     </div>
     <section class="card__content" aria-labelledby="card__title">
       <header class="card__header">
@@ -29,19 +29,19 @@
           experience, and overall efficiency.
         </p>
       </header>
-      <section class="card__stats" aria-label="Buisness statistics">
-        <div class="card__group">
-          <p class="card__number">10k+</p>
-          <p class="card__name">companies</p>
-        </div>
-        <div class="card__group">
-          <p class="card__number">314</p>
-          <p class="card__name">templates</p>
-        </div>
-        <div class="card__group">
-          <p class="card__number">12M+</p>
-          <p class="card__name">queries</p>
-        </div>
+      <section class="card__stats" aria-label="Business statistics">
+        <dl class="card__group">
+          <dt class="card__number">10k+</dt>
+          <dd class="card__name">companies</dd>
+        </dl>
+        <dl class="card__group">
+          <dt class="card__number">314</dt>
+          <dd class="card__name">templates</dd>
+        </dl>
+        <dl class="card__group">
+          <dt class="card__number">12M+</dt>
+          <dd class="card__name">queries</dd>
+        </dl>
       </section>
     </section>
   </main>
